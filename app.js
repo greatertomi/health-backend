@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,7 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 
-/* app.use('/api/v1/employees', require('./routes/employees')); */
+app.use('/api/v1/health', require('./routes/health'));
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);

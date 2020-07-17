@@ -13,6 +13,8 @@ db.connect((err) => {
 
 router.get('/doctors', healthController.getDoctors);
 
+router.post('/registerDoctor', healthController.registerDoctor);
+
 router.get('/sendMail', healthController.sendMail);
 
 module.exports = router;

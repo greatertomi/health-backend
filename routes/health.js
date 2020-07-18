@@ -5,7 +5,7 @@ const healthController = require('../controller/health');
 
 const router = Router();
 
-db.connect((err) => {
+db.getConnection((err) => {
   if (err) throw err;
 
   console.log('MySQL is connected...');

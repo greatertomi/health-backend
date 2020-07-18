@@ -1,0 +1,4 @@
+{
+  "CLEARDB_DATABASE_URL": "mysql://bf10232790d9d4:1cc15d4e@us-cdbr-east-02.cleardb.com/heroku_45b4856ef8d7128?reconnect=true",
+  "URL_Explained": "user:password@host/database"
+}
